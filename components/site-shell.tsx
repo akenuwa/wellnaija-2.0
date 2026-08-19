@@ -57,7 +57,7 @@ export function PageFrame({ children }: { children: React.ReactNode }) {
 }
 
 export function PageIntro({ eyebrow, title, copy }: { eyebrow: string; title: React.ReactNode; copy: string }) {
-  return <section className="page-intro section-dark"><div className="container"><p className="eyebrow">{eyebrow}</p><h1>{title}</h1><p className="hero-text">{copy}</p></div></section>
+  return <section className="page-intro section-dark"><div className="container page-intro-grid"><div><p className="eyebrow">{eyebrow}</p><h1>{title}</h1><p className="hero-text">{copy}</p></div><div className="page-mascot"><img src="/images/mascot-doctor.png" alt="WellNaija mascot with a verified care clipboard" /></div></div></section>
 }
 
 export function ArrowLink({ href, children }: { href: string; children: React.ReactNode }) {
